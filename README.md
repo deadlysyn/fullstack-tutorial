@@ -20,7 +20,7 @@ node dist/index.js # run compiled javascript directly
 ```console
 npm i @mikro-orm/cli @mikro-orm/core @mikro-orm/migrations
 npm i @mikro-orm/postgresql pg # or mysql, mongo, etc...
-# development only...
+# start db - DEVELOPMENT ONLY!
 mkdir -p pgdata && docker run --rm -d \
     --name postgres \
     -p 5432:5432 \
@@ -28,5 +28,16 @@ mkdir -p pgdata && docker run --rm -d \
     -e PGDATA=./pgdata \
     -v pgdata:/var/lib/postgresql/data \
     postgres
+# connect to default db
+psql postgres -h localhost -Upostgres -W
+# create db
+postgres=# create database lireddit
+# list databases...
+postgres=# \l
+# disconnect...
+postgres=# ^D
+# connect to app db
+psql lireddit -h localhost -Upostgres -W
 ```
 
+# 
