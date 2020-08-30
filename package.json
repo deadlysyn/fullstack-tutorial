@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-tutorial",
+  "version": "1.0.0",
+  "description": "Artifacts from https://youtu.be/I6ypD7qv3Z8",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "start2": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadlysyn/fullstack-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deadlysyn/fullstack-tutorial/issues"
+  },
+  "homepage": "https://github.com/deadlysyn/fullstack-tutorial#readme",
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
