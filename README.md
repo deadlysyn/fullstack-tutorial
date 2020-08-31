@@ -40,4 +40,10 @@ postgres=# ^D
 psql lireddit -h localhost -Upostgres -W
 ```
 
-# 
+# MicroORM
+
+```console
+npx mikro-orm migration:create
+
+```
+
